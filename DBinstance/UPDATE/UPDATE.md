@@ -46,3 +46,26 @@ UPDATE login_member set marketing_yn= FALSE;
 
 false 로 변경되는것을 볼 수 있다.
 
+
+### update는 조건이 있다.
+
+예시)
+
+<img width="855" alt="스크린샷 2023-01-23 오후 4 29 37" src="https://user-images.githubusercontent.com/104719555/213987073-9ee1283e-c5c0-4bd0-8f5f-db8aff1bf749.png">
+
+
+만약에 login_member 테이블에 4개의 데이터가 있다고 하자 
+
+여기서 나는 password에 데이터가 있는(NULL 이 아닌) 정보에 marketing_yn을 true 로 바꾸고 싶을 때는 조건문을 사용해야 한다.
+
+<img width="860" alt="스크린샷 2023-01-23 오후 4 41 43" src="https://user-images.githubusercontent.com/104719555/213987978-3851034d-2056-4b5c-a148-27d11cab42d1.png">
+
+위 사진의 뜻은 '나 login_memeber 테이블에 있는 데이터중에 marketing_yn을 true로 변경하고 싶어 근데 password의 값이 null이 아닌 로우에만" 
+
+이라는 뜻이다
+
+<img width="848" alt="스크린샷 2023-01-23 오후 4 44 40" src="https://user-images.githubusercontent.com/104719555/213988386-ed45a456-cc8b-4728-a185-f30cd81f23bd.png">
+
+실행하면 위의 사진처럼 null이 아닌 로우에만 true로 바뀌는걸 볼수 있다. 
+
+데이터 수정 / 삭제는 조심 또 조심 해야될 상황이기 떄문에 무조건 !! 조건문을 써서 데이터를 변경 또는 삭제를 하는 것이 좋다.

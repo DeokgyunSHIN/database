@@ -44,8 +44,5 @@ UPDATE login_member set marketing_yn= FALSE;
 
 <img width="855" alt="스크린샷 2023-01-23 오후 4 29 37" src="https://user-images.githubusercontent.com/104719555/213986230-b76e2016-b680-4456-8100-0c5365dd43f2.png">
 
-ㄹ
-<img width="855" alt="스크린샷 2023-01-23 오후 4 29 37" src="https://user-images.githubusercontent.com/104719555/213986230-b76e2016-b680-4456-8100-0c5365dd43f2.png">
-
 false 로 변경되는것을 볼 수 있다.
 

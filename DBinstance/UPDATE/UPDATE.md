@@ -11,7 +11,7 @@ SQL 문법
 
 <img width="928" alt="스크린샷 2023-01-22 오후 8 26 37" src="https://user-images.githubusercontent.com/104719555/213913396-c92c921c-bc3f-4614-bd9d-028fe96dc54f.png">
 
-위의 사진 처럼 marketing_yn 에 1이라고 적혀있다.
+위의 사진 처럼 marketing_yn 에 1이라고 적혀있다. ( 툴마다 true ,false 또는 0,1 로 표시된다고 합니다)
 
 그 이유는 그 전에 true 라고 데이터를 넣었기 때문에 1이라고 데이터를 넣었기 때문이다.
 
@@ -22,3 +22,30 @@ SQL 문법
 <img width="838" alt="스크린샷 2023-01-22 오후 8 31 58" src="https://user-images.githubusercontent.com/104719555/213913677-1668dd49-97dd-4bee-8028-3dfe6dd3d019.png">
 
 merketing_yn 에 1이 0으로 변경된 것을 볼수 있다.
+
+<br>
+<br>
+
+### 또다른 예시 
+
+<img width="875" alt="스크린샷 2023-01-23 오후 4 21 05" src="https://user-images.githubusercontent.com/104719555/213984956-71ebe3b5-baf6-4f97-ae48-4678e3b7539e.png">
+
+만약에 위의 사진처럼 4개의 데이터가 있다고 생각해보자 
+
+그러면 여기서 
+
+UPDATE login_member set marketing_yn= FALSE;
+
+라고 하면 컴퓨터는 다시 관리자한테 물어본다.
+
+'조건문이 없는데 너 전부 데이터를 false로 바꾸는거 맞아? 확실해??'
+
+라고 물어본다 여기서 하겠다고 하면 
+
+<img width="855" alt="스크린샷 2023-01-23 오후 4 29 37" src="https://user-images.githubusercontent.com/104719555/213986230-b76e2016-b680-4456-8100-0c5365dd43f2.png">
+
+ㄹ
+<img width="855" alt="스크린샷 2023-01-23 오후 4 29 37" src="https://user-images.githubusercontent.com/104719555/213986230-b76e2016-b680-4456-8100-0c5365dd43f2.png">
+
+false 로 변경되는것을 볼 수 있다.
+

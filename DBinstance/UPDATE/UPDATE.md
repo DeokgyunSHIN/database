@@ -62,7 +62,9 @@ false 로 변경되는것을 볼 수 있다.
 
 위 사진의 뜻은 '나 login_memeber 테이블에 있는 데이터중에 marketing_yn을 true로 변경하고 싶어 근데 password의 값이 null이 아닌 로우에만" 
 
-이라는 뜻이다
+이라는 뜻이다.
+
+실행을 시키게 되면 컴퓨터는 사용자에게 물어보지 않고 실행을 하게 된다. 그 이유는 조건문이 들어가 있기 때문!
 
 <img width="848" alt="스크린샷 2023-01-23 오후 4 44 40" src="https://user-images.githubusercontent.com/104719555/213988386-ed45a456-cc8b-4728-a185-f30cd81f23bd.png">
 

@@ -28,3 +28,15 @@ name 의 컬럼명을 조회한다는 뜻을 가지고 있다.
 <img width="395" alt="스크린샷 2023-01-24 오후 5 51 55" src="https://user-images.githubusercontent.com/104719555/214249345-d7f18199-5803-4f35-bb8d-27f57e553723.png">
 
 결과가 나오게 된다.
+
+
+또한 한글로도 쓸수 있다
+
+예시)
+
+<img width="405" alt="스크린샷 2023-01-27 오후 2 13 25" src="https://user-images.githubusercontent.com/104719555/215014447-2a09e2cd-3d86-4416-a7c1-560d703f8839.png">
+
+위에 사진처럼 SQL문을 싱행하게 되면 컬럼명이 영어가 아닌 한글로 변경될 수 있다는것을 볼수있다.
+
+<img width="355" alt="스크린샷 2023-01-27 오후 2 13 31" src="https://user-images.githubusercontent.com/104719555/215014528-c38cdd4d-547a-4e53-9e8d-be33cd627ace.png">
+

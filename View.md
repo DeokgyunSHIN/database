@@ -55,3 +55,17 @@ v_테이블명 을 사용하는 것이 좋다.
 
 ![스크린샷 2023-01-28 오후 10 44 58](https://user-images.githubusercontent.com/104719555/215269756-6b578ac9-83b9-473b-bda0-2cf499666e11.png)
 
+
+<br>
+<br>
+<br>
+
+### view 테이블 삭제 
+
+view 테이블 삭제는 drop을 이용하면된다.
+
+``` 
+ drop view v_member;
+```
+
+실행하게 되면 view 테이블이 지워지는 것을 볼 수 있다.

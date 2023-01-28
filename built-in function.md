@@ -104,4 +104,18 @@ CASE WHEN은 조건에 따라 값을 주는건데 자바로 따지면 if, else i
  END
 ```
 
-컬럼이 
+컬럼이 조건1 일떄는 값1을 , 조건2 일때는 값2을 반환하고 조건에 맞지 않으면 
+
+값 3을 반환하는것이다.
+
+![스크린샷 2023-01-28 오후 8 28 17](https://user-images.githubusercontent.com/104719555/215264629-981f573d-83bb-40df-82d1-716d6f45dccc.png)
+
+위의 사진의 SQL문을 보면 조건이 password길이가 2이상이면 concat(substring(password,1,2),'**') 이고 
+
+조건에 해당하지 않으면 ''를 출력하라는것이다.
+
+위의 SQL문을 실행하게된다면
+
+![스크린샷 2023-01-28 오후 8 28 26](https://user-images.githubusercontent.com/104719555/215264702-415e690c-db95-43ae-b600-12c6b044e779.png)
+
+위의 사진처럼 password의 길이가 2이상인 데이터만 출력이 되는 것을 볼수 있다.

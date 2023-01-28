@@ -91,3 +91,64 @@ mb.member_type , mb.user_id 뽑아달라는 뜻이다.
 
 실행을 하게 된다면 위의 사진 처럼 결과값을 얻을 수 있다. 이것 INNER JOIN이다.
 
+### LEFT JOIN
+
+LEFT JOIN은 왼쪽에 있는거 모두 출력이다. (A와 B의 공통적인 데이터 + LEFT에 있는것만)
+
+LEFT JOIN SQL 문 
+
+```
+  SELECT * FROM member as mb left join member_detail as md 
+ on mb.member_type =md.member_type 
+ and mb.user_id =md.user_id ;
+```
+
+SQL문을 보게되면 left join을 찾을수 있다.
+
+그 단어를 기준으로 왼쪽 즉, member테이블이 기준이 되는것이다.
+
+실행을 하게되면 
+
+<img width="1284" alt="스크린샷 2023-01-28 오후 6 39 49" src="https://user-images.githubusercontent.com/104719555/215259126-03b3355c-0111-4797-a91d-d52a43b154d4.png">
+
+위의 사진처럼 나오게된댜. member 테이블의 데이터는 5개 member_detail 테이블의 데이터는 3개 이다.
+
+2개 데이터는 없기 떄문에 NULL로 출력이된다.
+
+### RIGHT JOIN
+
+RIGHT JOIN은 왼쪽에 있는거 모두 출력이다. (A와 B의 공통적인 테이터 + RIGHT에 있는것만)
+
+RIGHT JOIN SQL 문 
+
+```
+  SELECT * FROM member as mb right join member_detail as md 
+ on mb.member_type =md.member_type 
+ and mb.user_id =md.user_id ;
+```
+
+SQL문을 보게 되면 right join의 기준으로 즉, member_detail이 기준이 된다.
+
+실행을 하게 되면 
+
+<img width="1283" alt="스크린샷 2023-01-28 오후 6 48 06" src="https://user-images.githubusercontent.com/104719555/215259692-132f433d-29eb-452b-b6e5-d9314f7bb4ed.png">
+
+위의 사진 처럼 출력되는것을 알수 있다. 
+
+member_detail 테이블의 데이터는 3개이다. 기준이 되기떄문에 3개만 나오게 되고 
+
+member 테이블의 조건이 같지 않은 데이터는 출력 되지 않는것을 볼수 있다.
+
+### FULL JOIN
+
+FULL JOIN은 모든 데이터 출력이다.
+
+```
+ SELECT * FROM member as mb  join member_detail as md;
+```
+
+실행을 하게되면
+
+<img width="1289" alt="스크린샷 2023-01-28 오후 6 51 44" src="https://user-images.githubusercontent.com/104719555/215259832-a369ce19-ebf1-4b3a-b0c3-502a029ae7b1.png">
+
+위의 사진 처럼 총 15개의 데이터가 나오게 된다(member테이블의 테이터 5개 * member_detail테이블의 데이터 3개)=15개
